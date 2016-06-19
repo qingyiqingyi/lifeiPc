@@ -1,0 +1,9 @@
+[
+{"img":"../img/live/focus4.jpg"},
+{"img":"../img/live/focus2.jpg"},
+{"img":"../img/live/focus3.jpg"},
+{"img":"../img/live/focus1.jpg"},
+{"img":"../img/live/focus5.jpg"},
+{"img":"../img/live/focus6.jpg"}
+
+]

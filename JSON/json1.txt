@@ -1,0 +1,16 @@
+[
+{"title":"我是这个轮播的第1张","img":"../img/nav/0.jpg","img1":"../img/nav/00.jpg"},
+{"title":"我是这个轮播的第2张","img":"../img/nav/1.jpg","img1":"../img/nav/11.jpg"},
+{"title":"我是这个轮播的第3张","img":"../img/nav/2.jpg","img1":"../img/nav/22.jpg"},
+{"title":"我是这个轮播的第4张","img":"../img/nav/3.jpg","img1":"../img/nav/33.jpg"},
+{"title":"我是这个轮播的第5张","img":"../img/nav/4.jpg","img1":"../img/nav/44.jpg"},
+{"title":"我是这个轮播的第6张","img":"../img/nav/5.jpg","img1":"../img/nav/55.jpg"},
+{"title":"我是这个轮播的第7张","img":"../img/nav/6.jpg","img1":"../img/nav/66.jpg"},
+{"title":"我是这个轮播的第8张","img":"../img/nav/7.jpg","img1":"../img/nav/77.jpg"},
+{"title":"我是这个轮播的第9张","img":"../img/nav/8.jpg","img1":"../img/nav/88.jpg"},
+{"title":"我是这个轮播的第10张","img":"../img/nav/9.jpg","img1":"../img/nav/99.jpg"},
+{"title":"我是这个轮播的第11张","img":"../img/nav/10.jpg","img1":"../img/nav/100.jpg"},
+{"title":"我是这个轮播的第12张","img":"../img/nav/15.jpg","img1":"../img/nav/150.jpg"},
+{"title":"我是这个轮播的第13张","img":"../img/nav/12.jpg","img1":"../img/nav/120.jpg"},
+{"title":"我是这个轮播的第14张","img":"../img/nav/13.jpg","img1":"../img/nav/130.jpg"}
+]

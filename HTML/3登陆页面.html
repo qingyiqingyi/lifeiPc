@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        html{overflow:hidden}
+        body{font-family:宋体,Tahoma,Verdana,Arial;font-size:12px;color:gray;margin:0;background:#fefefe}
+        ul{padding:0;margin:0}
+        ul li{list-style-type:none}
+        a{text-decoration:none;cursor:pointer;outline:0}
+        a:hover{text-decoration:underline}
+
+
+
+.login{width:620px;border:1px solid #b1b3b4;margin:0 auto;position:relative;overflow:hidden}.header{height:50px;border-bottom:0;position:relative;z-index:1001}
+.other_login{float:left;width:352px;}
+ .other_login .loginTips{height:50px;font-size:14px;font-weight:bold;position:relative}
+        .other_login.other_login .qloginTips{display:none;width:100%;text-align:center}
+.plogin .email_list li,.plogin .email_list p{height:31px;line-height:31px;margin:0;overflow:hidden;padding-left:10px}.plogin .email_list p{height:16px;line-height:10px}
+
+.qlogin{height:178px;width:300px;position:relative;margin:0 auto;}
+.qlogin .qlogin .qlogin_show{width:240px;height:130px;position:absolute;left:30px;top:18px;overflow:hidden}
+.qlogin .qlogin_list{height:100%;position:absolute;text-align:center;margin: 0 100px;}
+        .qlogin .prePage{width:30px;height:120px;position:absolute;top:20px;left:0;text-align:center;display:none
+        }.qlogin .nextPage{width:30px;height:120px;position:absolute;top:20px;right:0;text-align:center;display:none}.qlogin .preRow{width:16px;height:35px;display:inline-block;margin-top:35px;background:url(http://imgcache.qq.com/ptlogin/v4/style/20/images/c_icon_2_tiny.png) no-repeat -181px -185px;_background:url(../img/head/c_icon_2_tiny.png) no-repeat -181px -185px;cursor:pointer}
+        .qlogin .prePage:hover .preRow{background-position:-181px -228px}.qlogin .nextRow{width:16px;height:35px;display:inline-block;margin-top:35px;background:url(http://imgcache.qq.com/ptlogin/v4/style/20/images/c_icon_2_tiny.png) no-repeat -201px -185px;_background:url(../img/head/c_icon_2_tiny.png) no-repeat -201px -185px;cursor:pointer}
+        .qlogin .face img{width:80px;height:80px;border:0;position: relative;top:5px;}
+    .bottom{text-align:right;font-size:12px;clear:both;position:relative;height:46px;line-height:46px;padding-right:10px;z-index:1002}
+        .bottom .link{color:gray}
+        .bottom .dotted{color:#bfbfbf;margin:0 5px}
+        .qrlogin{width:265px;height:270px;float:left;position:relative;}
+        .qrlogin .qr_title{position:absolute;top:0;text-align:center;width:100%;font-size:14px;font-weight:bold}
+        .qrlogin .qr_img_box{width:150px;height:150px;position:absolute;top:50px;left:57px}
+ .qrlogin .qr_img{position:absolute;top:0;left:0;width:149px;height:149px;border:1px solid #d3d3d3}
+.qrlogin .qr_img_logo{position:absolute;width:42px;height:47px;top:54px;left:54px;background:url(../img/head/c_icon_2_tiny.png) no-repeat -156px -473px;}
+  .qrlogin .qr_invalid{display:none;width:150px;height:150px;left:1px;top:1px;position:absolute;cursor:pointer}
+ .qrlogin .qr_mengban{background:#000;width:150px;height:150px;position:absolute;top:0;left:0;filter:Alpha(opacity=50);opacity:.5}
+.qrlogin .qr_invalid_tips{color:#fff;left:0;line-height:20px;position:absolute;text-align:center;top:55px;width:150px;cursor:pointer}
+ .qrlogin .qr_info{bottom:20px;position:absolute;text-align:center;width:100%}
+ .qrlogin .qr_info_link{text-decoration:none;display:inline-block;width:152px;height:30px;line-height:30px;color:gray;_background:url(../img/head/c_icon_2_tiny.png) no-repeat 0 -474px}
+        .qrlogin .qr_info_link:hover{background-position:0 -506px;text-decoration:none}
+        .face{display: block;width: 88px;  height: 88px;  position: relative;  background: url(../img/head/c_icon_2_tiny.png) no-repeat -91px -183px;}
+        .uin{display:none;position: relative;background-color: rgba(0,0,0,.4);width: 80px;top:-17px;left:4px;}
+        .nick{width: 50px;  display: block;  position: absolute;  top: 120px;  left: 15px;}
+        .qlogin_show{width: 100%;height: 100%}
+        .point{width: 16px;height: 16px;display: block;float: left; margin-left: 295px;margin-top: 17px;}
+        .display{background: url(../img/head/c_icon_2_tiny.png) no-repeat -228px -250px;line-height: 46px;}
+        .low_login_wording{ float: left;  height: 14px;   color: #b5bbc1;  cursor: pointer;line-height: 46px;}
+        .show{position: absolute;top:50px;left: 240px;display: none;opacity: 0}
+        .switcher_plogin{margin-left:95px;  text-align: center;color: #579feb;}
+        .login_tab .list_item {  display: inline-block;  zoom: 1;  width: 50%;  text-align:center;  }
+        li {  vertical-align: top;  }
+        .login_tab .list_item .tab_item {  display: block;
+            width: 100%;  height: 50px;  line-height: 50px;  font-size: 16px;  color: #adadad;  }
+        .login_tab .list_item {  display: inline-block;  zoom: 1;  width: 50%;  text-align: center;  }
+         .login_tab .current .tab_item_wx {
+            border-bottom-color: #4ab218;
+        }
+        .login_dialog .login_tab .current .tab_item {
+            height: 49px;  border-bottom: 2px solid #999;  margin-bottom: -2px;  color: #000;
+        }
+        .login_dialog .login_tab .list_item .tab_item {
+            display: block;  width: 100%;  height: 50px;  line-height: 50px;  font-size: 16px;  color: #adadad;
+        }
+        a:visited, a[tabindex='-1']:focus {  outline: 0 none; color: #2a2a2a; text-decoration: none;   }
+        .login_dialog .login_tab .list_item .tab_item {  line-height: 50px;  font-size: 16px;  color: #adadad;  }
+.tab_list{   margin-bottom: -1px;  border: 1px solid #b1b3b4;  border-bottom-color: #e6e6e6;  background: #f1f1f1; }
+        .header {
+            height: 50px;
+            border-bottom: 0;
+            position: relative;
+            z-index: 1001;}
+        .current{border-bottom: 2px solid greenyellow}
+        .firstHide{position: relative;display: none}
+        .desc{text-align: center}
+        input{display: block;outline: none;position: relative;line-height: 16px;padding:10px;padding-right: 0;margin-bottom: 15px;width: 255px;border-radius: 5px;color: #AEADAE;border: 1px solid #AEADAE}
+        #title0{color: #00A5FF}
+        #form{margin: 30px auto;width: 275px;text-align: center;}
+        #last{width: 265px;background-color: lightgreen;color: #252525}
+        #qqLoad{display: block}
+
+        /*微信登陆*/
+        .secondHide{display: none}
+        .sImg{display: block;width:148px;height: 148px;border: 1px solid #AEADAE }
+        .S2{width: 150px;margin:20px auto}
+        .S3{width: 230px;background-color: #ebebeb;border-radius: 8px;text-align: center;margin: 0 auto;margin-bottom: 20px;}
+        .S1{width: 150px;background-color: #AEADAE;text-align: center;margin: 0 auto;font-size: 14px;line-height: 14px;padding: 5px}
+         .error_tips{    display: none;
+             position: absolute;
+             width: 258px;
+             left: 50%;
+             margin-left: -129px;
+             z-index: 1000;
+             top: 45px;}
+        .error_logo{
+            position: absolute;
+            left: 3px;
+            height: 18px;
+            line-height: 18px;
+            width: 18px;
+            background: url(../img/live/icon_3_tiny.png) no-repeat 0 -162px;}
+        .err_m{display: inline-block;
+            padding-left: 20px;
+            line-height: 18px;
+            color: #ff3b30;
+            vertical-align: middle;
+            text-align: left;}
+        .ss{position: absolute;
+            top: 125px;
+            left: 185px;
+            font-size: 14px;
+            line-height: 16px;
+            color: #aaa;
+            cursor: text;}
+    </style>
+</head>
+<body>
+<div class="login" id="login">
+
+        <div class="login_tab"><ul class="tab_list"><li class="list_item _list_item_qq current" data-type="qq"><a href="javascript:void(0);" class="tab_item tab_item_qq"><span class="item_inner">QQ帐号登录</span></a></li><li class="list_item _list_item_wx" data-type="wx"><a href="javascript:void(0);" class="tab_item tab_item_wx"><span class="item_inner">微信帐号登录</span></a></li></ul></div>
+        <div class="header">   </div>
+    <div id="qqLoad">
+        <div class="qrlogin" id="qrlogin"><label class="qr_title">安全登录，防止被盗</label>
+
+            <div class="qr_img_box" id="qr_img_box"><img id="qr_img" class="qr_img" src="../img/head/ptqrshow.png">
+                <span id="qr_img_logo" class="qr_img_logo"></span> <span id="qr_invalid" class="qr_invalid" style="display: block;"><span id="qr_mengban"
+                                                                                                                                         class="qr_mengban"></span> <span id="qr_invalid_tips" class="qr_invalid_tips">二维码失效<br>请点击刷新</span></span></div>
+            <div class="qr_info"><a class="qr_info_link" id="qr_info_link" href="http://im.qq.com/mobileqq/#from=login"
+                                    target="_blank" tabindex="13">使用QQ手机版扫描二维码</a></div>
+            <div class="split_line"></div>
+        </div>
+        <div class="other_login" id="other_login">
+            <div id="loginTips" class="loginTips"><span class="qloginTips" id="qloginTips" href="javascript:void(0);" style="display: block;">点击头像快速登录</span>
+
+            </div>
+            <div class="qlogin" id="qlogin">
+                <div class="qlogin_show" id="qlogin_show">
+                    <div class="qlogin_list" id="qlogin_list">
+                        <a href="4.登陆跳转后的页面和2同.html" class="face"> <img  id="img_798816789" src="../img/head/g.jpg" alt=""/></a>
+                        <span class="uin">798816789</span>
+                        <span id="nick_798816789" class="nick">青衣青翼</span>
+
+                    </div>
+                </div>
+                <a  class="switcher_plogin" href="javascript:void(0);" tabindex="8">使用帐号密码登录</a>
+            </div>
+        </div>
+        <div class="firstHide">
+            <div class="mainbox">
+                <div class="desc">
+                    <h2> 在网吧等公共环境可能导致帐号密码泄漏，</br>
+                        使用 <a id="title0" href="">QQ手机版扫码登录，</a>更安全。</h2>
+                </div>
+                <div class="error_tips" id="error_tips"><span class="error_logo" id="error_logo"></span> <span class="err_m" id="err_m"></span>
+                </div>
+                <div id="form">
+                    <input id="input1" type="text" value="支持QQ号/邮箱/手机号登陆"/>
+                    <input id="input2" type="password" maxlength="16">
+                    <p class="ss" id="ss">密码</p>
+                    <div id="submit">
+                        <a href="javascript:void 0">
+                            <input id="last" type="button" value="登陆"/></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="bottom" id="bottom">
+            <a href="javascript:void 0" class="link" target="_blank" tabindex="11">注册新帐号</a> <span class="dotted">|</span>
+            <a class="link" id="feedback_qlogin" target="_blank" tabindex="12">意见反馈</a>
+            <a href="" class="point display"></a>
+            <label class="low_login_wording" id="q_low_login_wording">下次自动登录</label>
+
+        </div>
+
+        <div class="show" id="show">
+            <img src="../img/head/big_24_tiny.png" alt=""/>
+        </div>
+    </div>
+    <div class="secondHide">
+        <div class="secondC">
+            <div class="S1">安全登录，防止被盗</div>
+            <div class="S2"><img class="sImg" src="../img/head/code.jpg" alt=""/></div>
+            <div class="S3">请使用微信扫描二维码登录</br>
+                “腾讯视频微信登录”</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+<script src="../JS/DOM.js"></script>
+<script src="../JS/utils.js"></script>
+<script src="../JS/zhufengTween.js"></script>
+<script>
+    var right= document.getElementsByClassName('uin')[0];
+    var face= document.getElementsByClassName('face')[0];
+    var leftBox= document.getElementById("qr_img_box");
+    var leftDis= document.getElementById("show");
+    var weiXin= document.getElementsByClassName('_list_item_wx')[0];
+    var weiC= document.getElementsByClassName('secondHide')[0];
+    var qqC= document.getElementById("qqLoad");
+    var qq= document.getElementsByClassName('_list_item_qq ')[0];
+    var tarClick= document.getElementsByClassName('switcher_plogin')[0];
+    var hideFi= document.getElementById("qrlogin");
+    var hideSe= document.getElementById("other_login");
+    var hideLi=  document.getElementsByClassName("firstHide")[0];
+    tarClick.onclick= function () {
+        hideFi.style.display='none';
+        hideSe.style.display='none';
+        hideLi.style.display='block'
+    };
+    weiXin.onclick= function () {
+        weiC.style.display='block';
+      utils.addClass(weiXin,'current');
+      utils.removeClass(qq,"current");
+        qqC.style.display='none'
+
+    };
+    qq.onclick= function () {
+        qqC.style.display='block';
+        utils.addClass(qq,'current');
+        utils.removeClass(weiXin,"current");
+        weiC.style.display='none'
+    };
+
+
+    function pub(x) {
+        zhufengAnimate( x,{opacity:1},500);
+      x.style.display='block';
+    }
+    function pub2(x) {
+        zhufengAnimate( x,{opacity:0},500);
+       x.style.display='none'
+    }
+    leftBox.onmouseenter= function () {
+        leftDis.style.display='block';
+        pub( leftDis)
+    };
+    leftBox.onmouseleave= function () {
+         pub2( leftDis)
+    };
+    face.onmouseenter= function () {
+        pub(right)
+    };
+    face.onmouseleave= function () {
+        pub2(right)
+
+    };
+    var reg=/^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/;
+    var reg1=/^[0-9]{5,11}\s*$/;
+
+     var reg2=/^(13[0-9]{9})|(14[0-9])|(18[0-9])|(15[0-9][0-9]{8})$/;
+//    手机号码
+// QQ号密码
+    var reg3=/^[a-zA-Z]\w{5,17}$/;
+    var oName= document.getElementById("input1");
+    var va= document.getElementById("err_m");
+    var ser= document.getElementById("input2");
+     var mainV= document.getElementById("error_tips");
+    var ss= document.getElementById("ss");
+    var last= document.getElementById("last");
+     oName.onfocus= bind3;
+     ser.onfocus= function () {
+         ss.style.display='none';
+         bind3();
+     };
+         function bind3(){
+         mainV.style.display='none';
+         va.innerText='';
+        if( this.value=this.defaultValue){
+            this.value="";
+        }
+        this.value="";
+    };
+    var flag=false;
+
+    oName.onblur=function(){
+
+        var val=this.value;
+        var regSpace=/\s+/g;
+        val=val.replace(regSpace,"");
+        var length=val.length;
+        if(length){
+            if(3<length<10){
+                if(!reg1.test(val)){
+                    mainV.style.display='block';
+                    va.innerText='请输入正确账号'
+                }else{
+                    flag=true
+                }
+            }else if(length>10){
+                if(!(reg2.test(val)||reg.test(val))){
+                    mainV.style.display='block';
+                    va.innerText='请输入账户'
+                }else{
+                    flag=true
+                }
+            }
+        }else{
+            this.value='支持QQ号/邮箱/手机号登陆'
+        }
+
+    }
+    var flag1=false;
+    ser.onblur= function () {
+        var val=this.value;
+        var regSpace=/\s+/g;
+        val=val.replace(regSpace,"");
+        var length=val.length;
+        if(length){
+            if(5<length<16){
+                if(!reg3.test(val)){
+                    mainV.style.display='block';
+                    va.innerText='请输入正确密码'
+                }else{
+                    flag1=true
+                }
+            }
+        }else{
+            this.value="";
+            ss.style.display='block';
+        }
+
+    }
+    last.onclick= function () {
+        if(flag==flag1==true){
+        window.open("./2网页内容.html");
+
+        }else{
+            mainV.style.display='block';
+            va.innerText='非合法输入，请重新输入'
+        }
+    }
+</script>
